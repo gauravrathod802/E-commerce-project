@@ -4,9 +4,9 @@ export const MyContext = createContext();
 
 const Reducer = (state, action) => {
     switch (action.type) {
-        case "Login":
+        case "LOGIN":
             return { ...state, user: action.payload }
-        case "Register":
+        case "LOGOUT":
             return { ...state, user: null }
         default:
             return state
