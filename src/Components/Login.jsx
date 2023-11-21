@@ -1,6 +1,10 @@
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { MyContext } from "../Context/AuthContext";
+import './Styles/Login.css';
+import { FcGoogle } from "react-icons/fc";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 
 function Login() {
@@ -28,15 +32,25 @@ function Login() {
             alert("Please fill all details.")
         }
     }
+    function gotoRegister(){
+        router('/register')
+    }
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
+        <div className="login">
+            <form className="my-form" onSubmit={handleSubmit}>
                 <h1>Login</h1>
                 <label htmlFor="email">Email</label><br />
-                <input type="text" id="email" onChange={handleChange} name='email' required value={userData.email} /><br />
+                <input className="input" type="text" id="email" onChange={handleChange} name='email' required value={userData.email} placeholder="enter email" /><br />
                 <label htmlFor="password">Password</label><br />
-                <input type="password" id="password" onChange={handleChange} required name='password' value={userData.password} /><br />
-                <input type="submit" value="Login" />
+                <input className="input" type="password" id="password" onChange={handleChange} required name='password' value={userData.password} placeholder="enter password"/><br />
+                <input className="submit" type="submit" value="Login" />
+
+                <p>Don't have an account?<button className="not-account" onClick={gotoRegister}>register here</button></p>
+                <div className="register-icon">
+                <FcGoogle />
+                <FaFacebook style={{color:"#316FF6"}}/>
+                <FaTwitter style={{color:" #1DA1F2"}}/>
+                </div>
             </form>
         </div>
     )

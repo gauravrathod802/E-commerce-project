@@ -1,0 +1,52 @@
+*{
+    margin:0;
+}
+.register{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+.register h1{
+    margin-bottom: 30px;
+    color: blue;
+}
+.myForm{
+    background-color: rgb(186, 228, 245) ;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 50px;
+    border: none;
+    box-shadow: 0 4px 6px blue;
+}
+.input_text{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.button_register{
+        font-size: 15px;
+        margin-top: 30px;
+        height: 30px;
+        width: 225px;
+        background-color: rgb(32, 216, 7);
+        color: white;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+}
+.already-account{
+    margin-top: 20px;
+    border: none;
+    color: blue;
+    background-color:rgb(186, 228, 245) ;
+    cursor: pointer;
+    font-size: 15px;
+}
+.register-icon{
+    font-size: 30px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    cursor: pointer;
+}

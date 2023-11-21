@@ -1,5 +1,11 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import './Styles/Register.css'
+import { FcGoogle } from "react-icons/fc";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+
+
 
 function Register() {
     const router = useNavigate();
@@ -32,18 +38,31 @@ function Register() {
             alert("Please fill all the details...")
         }
     }
+    function gotoRegister() {
+        router('/login')
+    }
+
+
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
+        <div className="register">
+            <form className="myForm"onSubmit={handleSubmit}>
             <h1>Register</h1>
                 <label htmlFor="">Name</label><br />
-                <input type="text" onChange={handleChange} name='name' required value={userData.name} /><br />
+                <input className="input_text" type="text" onChange={handleChange} name='name' required value={userData.name} placeholder="enter name"/><br />
                 <label htmlFor="email">Email</label><br />
-                <input type="email" id="email" onChange={handleChange} name='email' required value={userData.email} /><br />
+                <input className="input_text" type="email" id="email" onChange={handleChange} name='email' required value={userData.email} placeholder="enter email"/><br />
                 <label htmlFor="password">Password</label><br />
-                <input type="password" id="password" onChange={handleChange} name='password' required value={userData.password} /><br />
-                <input type="submit" value="Register" />
+                <input className="input_text"  type="password" id="password" onChange={handleChange} name='password' required value={userData.password} placeholder="enter password"/><br />
+                <input className="button_register"type="submit" value="Register" />
+                <p>Already have an account?<button className="already-account" onClick={gotoRegister}>login here</button></p>
+                {/* <p>or</p> */}
+                <div className="register-icon">
+                <FcGoogle />
+                <FaFacebook style={{color:"#316FF6"}}/>
+                <FaTwitter style={{color:" #1DA1F2"}}/>
+                </div>
             </form>
+         
         </div>
     )
 }
