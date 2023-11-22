@@ -1,13 +1,16 @@
-import { useState } from "react";
+import {  useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './Styles/Register.css'
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { MyContext } from "../Context/AuthContext";
 
 
 
 function Register() {
+    const {state}=useContext(MyContext)
+
     const router = useNavigate();
     const [userData, setUserData] = useState({ name: "", email: "", password: "" })
     console.log(userData)
@@ -42,6 +45,11 @@ function Register() {
         router('/login')
     }
 
+    useEffect(()=>{
+        if(state?.user?.name){
+            router('/')
+        }
+    },[state])
 
     return (
         <div className="register">
@@ -62,7 +70,6 @@ function Register() {
                 <FaTwitter style={{color:" #1DA1F2"}}/>
                 </div>
             </form>
-         
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import { createContext, useReducer } from "react";
+import { createContext, useEffect, useReducer } from "react";
 
 export const MyContext = createContext();
 
@@ -23,8 +23,21 @@ const AuthContext = ({ children }) => {
     }
 
     const Logout = () => {
+        localStorage.removeItem("Logged_In_User")
         dispatch({ type: "LOGOUT" })
     }
+    useEffect(()=>{
+        // alert("User refreshed the page")
+        const isUserLoggedIn=JSON.parse(localStorage.getItem("Logged_In_User"))
+        if(isUserLoggedIn){
+            const users=JSON.parse(localStorage.getItem("USER_DB"));
+            for(var i=0;i<users.length;i++){
+                if(isUserLoggedIn.email===users[i].email){
+                    Login({name:users[i].name,email:users[i].email})
+                }
+            }
+        }
+    },[])
     return (
         <MyContext.Provider value={{ state, Login, Logout }}>
             {children}

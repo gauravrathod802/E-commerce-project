@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { MyContext } from "../Context/AuthContext";
 import './Styles/Login.css';
@@ -20,6 +20,7 @@ function Login() {
             const LS = JSON.parse(localStorage.getItem("USER_DB"));
             for (var i = 0; i < LS.length; i++) {
                 if (LS[i].email === userData.email && LS[i].password === userData.password) {
+                    localStorage.setItem("Logged_In_User",JSON.stringify({email:LS[i].email}))
                     Login({ name: LS[i].name, email: LS[i].email })
                     setUserData({ email: "", password: "" })
                     router("/")
@@ -35,6 +36,12 @@ function Login() {
     function gotoRegister(){
         router('/register')
     }
+    useEffect(()=>{
+        if(state?.user?.name){
+            router('/')
+        }
+    },[state])
+
     return (
         <div className="login">
             <form className="my-form" onSubmit={handleSubmit}>
