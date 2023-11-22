@@ -30,7 +30,7 @@
     height: 80px;
     background-size: cover;
     width: 100%;
-    
+    cursor: pointer;
 }
 .logout{
     color: red;
