@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { MyContext } from "../Context/AuthContext"
 import "./Styles/HomePage.css"
+import { GoSignIn } from "react-icons/go";
 
 import { FaUserCircle } from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi";
@@ -21,13 +22,17 @@ function HomePage() {
     return (
         <div>
         <div className="nav">
-            <div className="nav_icon"><FaUserCircle /></div>
+            {/* <div className="nav_icon"><FaUserCircle /></div> */}
+            <div className="logo"><div className="nav_icon"></div></div>
+            
+            <div className="nav_text">Welcome {state?.user?.name}</div>
 
-            <div className="nav_text">Welcome, {state?.user?.name}</div>
+           {state?.user? <div className="logout"><FiLogOut onClick={myLogout}/></div>
+           :
+           
+           <div className="login_button"><GoSignIn onClick={gotoLogin}/></div>}
 
-           {state?.user? <button onClick={myLogout}>Logout</button>:<button onClick={gotoLogin}>Login</button>}
-
-            <div className="logout"><FiLogOut onClick={gotoLogin}/></div>
+            {/* <div className="logout"><FiLogOut onClick={myLogout}/></div> */}
         </div>
         <div className="home">
         <h1>Products</h1>
