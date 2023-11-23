@@ -1,0 +1,106 @@
+#navbar{
+    border: 2px solid black;
+    display: flex;
+    height: 60px;
+    background-color: black;
+    color: white;
+    justify-content:space-between;
+    font-weight: 450;
+}
+.nav-first{
+    width: 90px;
+    background-image: url('../Images/E-commerce-logo.png');
+    height: 60px;
+    background-size: cover;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.nav-second{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-search{
+    display: flex;
+    background-color: rgb(255, 132, 0);
+    height: 40px;
+    width:550px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 10px;
+}
+/* .nav-search:hover{
+    border: 2px solid orange;
+} */
+.search-select{
+    background-color: #f3f3f3;
+    width:50px ;
+    text-align: center;
+    border-top-left-radius: 4px ;
+    border-bottom-left-radius: 4px;
+    border:none;
+}
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    border-top-right-radius: 4px ;
+    border-bottom-right-radius: 4px;
+    
+}
+.nav-fourth{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.first-profile{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+.profile-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px;
+}
+.profile-name{
+    display: flex;
+    font-size: 15px;
+    margin-left: 5px;
+}
+.nav-logout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logout-logo{
+    align-items: center;
+    color: red;
+    font-size: 20px;
+}
+.cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cart-logo{
+    font-size: 20px;
+}
+
+.second-login{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    margin-left: 100px;
+}
+.login-logo{
+    color: rgb(47, 255, 75);
+    font-size: 20px;
+}

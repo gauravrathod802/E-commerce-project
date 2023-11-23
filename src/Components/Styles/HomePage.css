@@ -3,7 +3,7 @@
 }
 
 .nav{
-    background-color: black;
+    /* background-color: black; */
     height: 90px;
     width: 100%;
     display: flex;
@@ -19,18 +19,6 @@
 .logo{
     height: 80px;
     width: 110px;
-}
-.nav_icon{
-    /* color:white;
-    font-size: 45px;
-    font-weight: 700;
-    display: flex;
-    margin: 20px; */
-    background-image: url('../Images/E-commerce-logo.png');
-    height: 80px;
-    background-size: cover;
-    width: 100%;
-    cursor: pointer;
 }
 .logout{
     color: red;
