@@ -5,6 +5,7 @@ import './Styles/Login.css';
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import toast from "react-hot-toast";
 
 
 function Login() {
@@ -24,13 +25,13 @@ function Login() {
                     Login({ name: LS[i].name, email: LS[i].email })
                     setUserData({ email: "", password: "" })
                     router("/")
-                    return alert("Login successful !!!")
+                    return toast.success("Login successful !!!")
                 }
             }
-            return alert("Please check your credentials.")
+            return toast.error("Please check your credentials.")
 
         } else {
-            alert("Please fill all details.")
+            toast.error("Please fill all details.")
         }
     }
     function gotoRegister(){

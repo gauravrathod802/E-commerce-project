@@ -1,8 +1,29 @@
 *{
     margin:0;
 }
-.men h1{
-    margin-top: 300px;
-    margin-bottom: 292px;
-    text-align: center;
+.mens{
+    background-color: #e2e7e6;
+}
+.mens h1{
+    padding: 20px;
+}
+.mens-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.mens-box-child{
+    background-color: white;
+    width: 21%;
+    border: 2px solid black;
+    height: 400px;
+    margin-bottom: 20px;
+    border: none;
+    padding: 20px;
+}
+.mens-box-child img{
+    height: 70%;
+    width: 90%;
+    margin: auto;
+    cursor: pointer;
 }

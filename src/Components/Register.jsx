@@ -5,6 +5,7 @@ import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { MyContext } from "../Context/AuthContext";
+import toast from "react-hot-toast";
 
 
 
@@ -36,9 +37,9 @@ function Register() {
                 name: "", email: "", password: ""
             })
             router("/login")
-            alert("Registration Successful!!!")
+            toast.success("Registration Successful!!!")
         } else {
-            alert("Please fill all the details...")
+            toast.error("Please fill all the details...")
         }
     }
     function gotoRegister() {
