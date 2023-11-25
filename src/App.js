@@ -10,6 +10,7 @@ import Mens from './Components/Mens';
 import Womens from './Components/Womens';
 import Kids from './Components/Kids';
 import Electronics from './Components/Electronics';
+import Cart from './Components/Cart';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path='/kids' element={<Kids
         />}/>
         <Route path='/electronics' element={<Electronics/>}/>
+        <Route path='/cart' element={<Cart/>}/>
       </Routes>
       <Footer/>
     </div>

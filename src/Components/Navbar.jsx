@@ -51,13 +51,13 @@ function Navbar() {
                     </div>
                     :
                     <div className="second-login">
-                        <div onClick={() => router('/login')}className="login-logo"><GoSignIn/></div>
+                        <div onClick={() => router('/login')} className="login-logo"><GoSignIn/></div>
                         <div onClick={() => router('/login')}>Login</div>
                     </div>
                 }
 
                 <div className="cart">
-                    <div className="cart-logo"><FaCartShopping /></div>
+                    <div onClick={() => router('/cart')} className="cart-logo"><FaCartShopping /></div>
                     <div>Cart</div>
                 </div>
 

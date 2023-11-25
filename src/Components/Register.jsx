@@ -8,7 +8,6 @@ import { MyContext } from "../Context/AuthContext";
 import toast from "react-hot-toast";
 
 
-
 function Register() {
     const {state}=useContext(MyContext)
 
