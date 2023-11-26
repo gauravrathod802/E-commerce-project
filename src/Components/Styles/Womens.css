@@ -1,8 +1,30 @@
 *{
     margin:0;
 }
-.women h1{
-    margin-top: 300px;
-    margin-bottom: 292px;
-    text-align: center;
+.womens{
+    background-color: #e2e7e6;
+}
+.womens h1{
+    padding: 20px;
+}
+.womens-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.womens-box-child{
+    background-color: white;
+    width: 21%;
+    /* border: 2px solid black; */
+    height: 400px;
+    margin-bottom: 20px;
+    border: none;
+    padding: 20px;
+}
+.womens-box-child img{
+    height: 75%;
+    width: 90%;
+    margin: auto;
+    cursor: pointer;
+    padding: 10px;
 }

@@ -19,11 +19,11 @@ function Womens(){
         getProduct();
     }, [])
     return(
-        <div className='mens'>
+        <div className='womens'>
         <h1>Womens</h1>
-        <div className='mens-box'>
+        <div className='womens-box'>
             {products.map((product) => (
-                <div className='mens-box-child'>
+                <div className='womens-box-child'>
                     <img src={product.image} alt='' />
                     <h3>{product.title}</h3>
                     <h4>${product.price}</h4>

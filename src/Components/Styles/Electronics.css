@@ -1,18 +1,18 @@
 *{
     margin:0;
 }
-.mens{
+.electronics{
     background-color: #e2e7e6;
 }
-.mens h1{
+.electronics h1{
     padding: 20px;
 }
-.mens-box{
+.electronics-box{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.mens-box-child{
+.electronics-box-child{
     background-color: white;
     width: 21%;
     /* border: 2px solid black; */
@@ -21,8 +21,8 @@
     border: none;
     padding: 20px;
 }
-.mens-box-child img{
-    height: 75%;
+.electronics-box-child img{
+    height: 65%;
     width: 90%;
     margin: auto;
     cursor: pointer;

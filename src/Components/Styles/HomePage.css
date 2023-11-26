@@ -1,8 +1,30 @@
 *{
     margin:0;
 }
-.home h1{
-    margin-top: 300px;
-    margin-bottom: 292px;
-    text-align: center;
+.homepage{
+    background-color: #e2e7e6;
+}
+.homepage h1{
+    padding: 20px;
+}
+.homepage-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.homepage-box-child{
+    background-color: white;
+    width: 21%;
+    /* border: 2px solid black; */
+    height: 400px;
+    margin-bottom: 20px;
+    border: none;
+    padding: 20px;
+}
+.homepage-box-child img{
+    height: 65%;
+    width: 90%;
+    margin: auto;
+    cursor: pointer;
+    padding: 10px;
 }

@@ -22,11 +22,11 @@ function HomePage() {
     }, [])
 
     return (
-        <div className='mens'>
+        <div className='homepage'>
             <h1>All Products</h1>
-            <div className='mens-box'>
+            <div className='homepage-box'>
                 {products.map((product) => (
-                    <div className='mens-box-child'>
+                    <div className='homepage-box-child'>
                         <img src={product.image} alt='' />
                         <h3>{product.title}</h3>
                         <h4>${product.price}</h4>
