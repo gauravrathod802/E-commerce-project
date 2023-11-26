@@ -6,6 +6,7 @@ import { FaUserCircle } from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi";
 import { FaCartShopping } from "react-icons/fa6";
 import { GoSignIn } from "react-icons/go";
+import { IoSearch } from "react-icons/io5";
 
 
 function Navbar() {
@@ -29,7 +30,9 @@ function Navbar() {
                 <select class="search-select">
                     <option>All</option>
                 </select>
-                <input placeholder="Search for products, brands and more" class="search-input" />
+                <input placeholder="Search for products, brands and more" class="search-input"/>
+                <IoSearch style={{color:'white',fontSize:'35px',paddingLeft:'5px',paddingRight:'5px',paddingTop:'1px',cursor:'pointer'}}/>
+
             </div>
 
             {/* four */}

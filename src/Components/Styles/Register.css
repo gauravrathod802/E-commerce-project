@@ -4,7 +4,7 @@
 .register{
     display: flex;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 85vh;
     align-items: center;
 }
 .register h1{
@@ -22,6 +22,9 @@
 .input_text{
     margin-bottom: 15px;
     font-size: 18px;
+}
+.input_text:focus{
+    outline: none;
 }
 .button_register{
         font-size: 15px;
