@@ -11,6 +11,7 @@ import Womens from './Components/Womens';
 import Kids from './Components/Kids';
 import Electronics from './Components/Electronics';
 import Cart from './Components/Cart';
+import SingleProduct from './Components/SingleProduct';
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
         />}/>
         <Route path='/electronics' element={<Electronics/>}/>
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='/single-product/:id' element={<SingleProduct/>}/>
+
       </Routes>
       <Footer/>
     </div>
