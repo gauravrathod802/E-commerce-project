@@ -20,11 +20,12 @@
     margin-bottom: 20px;
     border: none;
     padding: 20px;
+    cursor: pointer;
+
 }
 .homepage-box-child img{
     height: 65%;
     width: 90%;
     margin: auto;
-    cursor: pointer;
     padding: 10px;
 }
