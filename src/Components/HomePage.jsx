@@ -29,7 +29,7 @@ function HomePage() {
             <div className='homepage-box'>
                 {products.map((product) => (
                     <div className='homepage-box-child'
-                    onClick={()=>router('/single-product/:id')}>
+                    onClick={()=>router(`/single-product/${product.id}`)}>
                         <img src={product.image} alt='' />
                         <h3>{product.title}</h3>
                         <h4>${product.price}</h4>
