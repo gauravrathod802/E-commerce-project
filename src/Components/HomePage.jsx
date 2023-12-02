@@ -33,7 +33,6 @@ function HomePage() {
                         <img src={product.image} alt='' />
                         <h3>{product.title}</h3>
                         <h4>${product.price}</h4>
-
                     </div>
                 ))}
             </div>
