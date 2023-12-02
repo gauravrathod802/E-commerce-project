@@ -32,6 +32,7 @@ function SingleProduct() {
                     <h1>{product.title}</h1>
                     <h2>Price : {product.price}</h2>
                     {/* <h2>Description : {product.description}</h2> */}
+                    <h2>Rating {product.rating && product.rating.rate}</h2>
                     {/* <h2>Ratings : {product.rating[rate,count]}</h2> */}
                     <button id="add-to-cart"onClick={() => router('/cart')}>Add to cart </button>
                     <button id="buy-now">Buy Now</button>
