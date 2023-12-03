@@ -12,10 +12,10 @@
     color: blue;
 }
 .my-form{   
-    background-color: rgb(186, 228, 245) ;
+    background-color: #E0E0E0 ;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgb(7, 216, 91);
+    box-shadow: 20px 20px 60px #00000041,inset -20px -20px 60px #ffffff00;
     border: none;
 }
 .input{
@@ -40,7 +40,7 @@
     margin-top: 20px;
     border: none;
     color: blue;
-    background-color:rgb(186, 228, 245) ;
+    background-color:#e0e0e0 ;
     cursor: pointer;
     font-size: 15px;
 }

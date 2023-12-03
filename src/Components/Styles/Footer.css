@@ -7,10 +7,10 @@
     width: 100%;
     background-color:black;
     color:white;
-    height: 50px;
+    height: 44px;
+    /* height: calc(100%); */
     align-items: center;
-    /* margin-top: 290px; */
 }
 .foot-copy{
-padding-bottom: 10px;
+/* padding-bottom: 10px; */
 }
