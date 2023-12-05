@@ -16,12 +16,14 @@
     margin-bottom: 110px;
     background-color: white;
     padding: 20px;
-
+    margin-left: 200px;
 
 }
 .single-product-content{
     display: flex;
     flex-direction: column;
+    margin-right: 300px;
+    margin-left: 100px;
 }
 #add-to-cart,#buy-now{
     background-color:#FFD814;

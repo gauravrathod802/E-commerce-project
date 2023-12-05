@@ -28,3 +28,7 @@
     cursor: pointer;
     padding: 10px;
 }
+.womens-box-child img:hover{
+    transform: scale(1.1);
+    transition: .1s ease-in-out;
+}

@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import './Styles/Womens.css'
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 function Womens(){
     const [products, setProducts] = useState([]);
+    const router=useNavigate();
     console.log(products, "product")
 
     async function getProduct() {
@@ -23,7 +25,7 @@ function Womens(){
         <h1>Womens</h1>
         <div className='womens-box'>
             {products.map((product) => (
-                <div className='womens-box-child'>
+                <div className='womens-box-child' onClick={()=>router(`/single-product/${product.id}`)}>
                     <img src={product.image} alt='' />
                     <h3>{product.title}</h3>
                     <h4>${product.price}</h4>

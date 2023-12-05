@@ -26,7 +26,7 @@ function SingleProduct() {
         <div>
             <div className='single-product'>
                 <div className="single-product-image">
-                <img src={product.image} alt='' style={{width:'400px'}}/>
+                <img src={product.image} alt='' style={{width:'300px'}}/>
                 </div>
                 <div className="single-product-content">
                     <h1>{product.title}</h1>
