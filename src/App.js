@@ -12,6 +12,7 @@ import Kids from './Components/Kids';
 import Electronics from './Components/Electronics';
 import Cart from './Components/Cart';
 import SingleProduct from './Components/SingleProduct';
+import Checkout from './Components/Checkout';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path='/electronics' element={<Electronics/>}/>
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/single-product/:id' element={<SingleProduct/>}/>
+        <Route path='/checkout' element={<Checkout/>} />
 
       </Routes>
       <Footer/>
